@@ -4,7 +4,7 @@
  * Redistribution, modification or use of this software in source or binary
  * forms is permitted as long as the files maintain this copyright. Users are 
  * permitted to modify this and use it to learn about the field of embedded
- * software. Joey Cao is not liable for any misuse of this material. 
+ * software. Joey Cao is not liable for any misuse of this material.
  *
  *****************************************************************************/
 /**
@@ -21,8 +21,6 @@
  * @date 12/11/20
  *
  */
-
-
 
 #include <stdio.h>
 #include "stats.h"
