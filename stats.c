@@ -4,18 +4,21 @@
  * Redistribution, modification or use of this software in source or binary
  * forms is permitted as long as the files maintain this copyright. Users are 
  * permitted to modify this and use it to learn about the field of embedded
- * software. Alex Fosdick and the University of Colorado are not liable for any
- * misuse of this material. 
+ * software. Joey Cao is not liable for any misuse of this material. 
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief Reads array and report statistic and sort array
  *
- * <Add Extended Description Here>
+ * analyze an array of unsigned char data items and report analytics on the maximum, 
+ * minimum, mean, and median of the data set. In addition, you will need to reorder 
+ * this data set from large to small. All statistics should be rounded down to the 
+ * nearest integer. After analysis and sorting is done, you will need to print that 
+ * data to the screen in nicely formatted presentation
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Joey Cao
+ * @date 12/11/20
  *
  */
 
@@ -38,7 +41,10 @@ void main() {
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
 
-  printf("hello world");
+  // analyze max, min, mean, and median first
+  // sort and manipulate array
+  // print sorted array
+  // print finding for statistic
 
 }
 
