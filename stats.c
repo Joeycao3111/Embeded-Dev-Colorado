@@ -37,13 +37,107 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
 
-  // analyze max, min, mean, and median first
-  // sort and manipulate array
-  // print sorted array
-  // print finding for statistic
+  sort_array(test, SIZE);
+  print_array(test, SIZE);
+  print_statistics(test, SIZE);
 
 }
 
-/* Add other Implementation File Code Here */
+/* Sort an array from greatest to smallest*/
+void sort_array(unsigned char *array, unsigned int len) 
+{
+  int i, j;
+  unsigned char tmp, greatest;
+  for (i = 0; i < (len); i++)
+  {
+    greatest=array[i]; //initalize the greatest number
+    for (j = i; j < (len); j++)
+    {
+      if (array[j] > greatest)
+        {
+          greatest=array[j];  //finding greatest in array
+          tmp=array[i];  //temp value for swpping array element
+          array[i]=array[j];
+          array[j]=tmp;
+        }
+    }
+  }
+}
+
+/* Print an array */
+void print_array(unsigned char *array, unsigned int len) 
+{
+  int i;
+  printf("Printing array below...\n");
+  for (i = 0; i < (len); i++)
+  {
+    printf("Array[%d]=%d\n", i, array[i]);
+  }
+}
+
+/* Finding minimum in an array */
+unsigned char find_minimum(unsigned char *array, unsigned int len) 
+{
+  int i;
+  unsigned char min=array[0];
+  for (i = 0; i < (len); i++)
+  {
+    if (array[i] < min)
+      {
+         min=array[i];
+      }
+  }
+  return min;
+}
+
+/* Finding maximum in array */
+unsigned char find_maximum(unsigned char *array, unsigned int len) 
+{
+  int i;
+  unsigned char max=array[0];
+  for (i = 0; i < (len); i++)
+  {
+    if (array[i] > max)
+      {
+         max=array[i];
+      }
+  }
+  return max;
+}
+
+/* Finding mean in array */
+unsigned char find_mean(unsigned char *array, unsigned int len) 
+{
+  int i;
+  unsigned int sum;
+  for (i = 0; i < (len); i++)
+  {
+    sum=sum+array[i];
+  }
+  return sum/len;
+}
+
+/* Finding median in array */
+unsigned char find_median(unsigned char *array, unsigned int len) 
+{
+  return array[len/2];
+}
+
+/* Run find min, max, mean, median function and print statistic*/
+void print_statistics(unsigned char *array, unsigned int len) 
+{
+  unsigned char mean, med, max, min;
+  min = find_minimum(array, SIZE);
+  max = find_maximum(array, SIZE);
+  mean = find_mean(array, SIZE);
+  med = find_median(array, SIZE);
+  printf("Statistic Summary below...\n");
+  printf("Array minimum=%d\n", min);
+  printf("Array maximum=%d\n", max);
+  printf("Array mean=%d\n", mean);
+  printf("Array median=%d\n", med);
+}
+
+
+

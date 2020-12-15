@@ -28,6 +28,7 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
+
 /**
  * @brief A function that prints the statistics of an array including minimum, maximum, mean, and median
  *
@@ -35,7 +36,7 @@
  * @param An unsigned integer as the size of the array
  * @return void
  */
-void print_statistics(unsigned char *array, unsigned int size) 
+void print_statistics(unsigned char *array, unsigned int size);
 
 /**
  * @brief Given an array of data and a length, prints the array to the screen
@@ -44,7 +45,7 @@ void print_statistics(unsigned char *array, unsigned int size)
  * @param An unsigned integer as the size of the array
  * @return void
  */
-void print_array(unsigned char *array, unsigned int size) 
+void print_array(unsigned char *array, unsigned int size);
 
 /**
  * @brief Given an array of data and a length, returns the median value
@@ -53,7 +54,7 @@ void print_array(unsigned char *array, unsigned int size)
  * @param An unsigned integer as the size of the array
  * @return An unsigned char result from the function
  */
-unsigned char find_median(unsigned char *array, unsigned int size) 
+unsigned char find_median(unsigned char *array, unsigned int size); 
 
 /**
  * @brief Given an array of data and a length, returns the mean
@@ -62,7 +63,7 @@ unsigned char find_median(unsigned char *array, unsigned int size)
  * @param An unsigned integer as the size of the array
  * @return An unsigned char result from the function
  */
-unsigned char find_mean(unsigned char *array, unsigned int size) 
+unsigned char find_mean(unsigned char *array, unsigned int size);
 
 /**
  * @brief Given an array of data and a length, returns the maximum
@@ -71,7 +72,7 @@ unsigned char find_mean(unsigned char *array, unsigned int size)
  * @param An unsigned integer as the size of the array
  * @return An unsigned char result from the function
  */
-unsigned char find_maximum(unsigned char *array, unsigned int size) 
+unsigned char find_maximum(unsigned char *array, unsigned int size); 
 
 /**
  * @brief Given an array of data and a length, returns the minimum
@@ -80,7 +81,7 @@ unsigned char find_maximum(unsigned char *array, unsigned int size)
  * @param An unsigned integer as the size of the array
  * @return An unsigned char result from the function
  */
-unsigned char find_minimum(unsigned char *array, unsigned int size) 
+unsigned char find_minimum(unsigned char *array, unsigned int size);
 
 /**
  * @brief Given an array of data and a length, sorts the array from largest to smallest. 
@@ -91,6 +92,6 @@ unsigned char find_minimum(unsigned char *array, unsigned int size)
  * @param An unsigned integer as the size of the array
  * @return void
  */
-void sort_array(unsigned char *array, unsigned int size) 
+void sort_array(unsigned char *array, unsigned int size);
 
 #endif /* __STATS_H__ */
